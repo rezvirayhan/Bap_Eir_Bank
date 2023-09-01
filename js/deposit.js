@@ -9,7 +9,6 @@
  * 7. claculate the new blance and set it to the blance total emement
  *
  */
-
 document.getElementById("btn-deposit").addEventListener("click", function () {
   const depositField = document.getElementById("deposit-filed");
   const newDepositAmounString = depositField.value;
@@ -27,7 +26,7 @@ document.getElementById("btn-deposit").addEventListener("click", function () {
   const blanceTotalElement = document.getElementById("blance-total");
   const prevBlanceTotalString = blanceTotalElement.innerText;
   const prevBlanceTotalAmount = parseFloat(prevBlanceTotalString);
-  //   setp -7 
-  const newBlanceTotal = prevBlanceTotalAmount + newDepositAmount
-  blanceTotalElement.innerText = newBlanceTotal
+  //   setp -7
+  const newBlanceTotal = prevBlanceTotalAmount + newDepositAmount;
+  blanceTotalElement.innerText = newBlanceTotal;
 });
