@@ -5,6 +5,8 @@
  * 3. clear the deposit input filed after getting the value.
  * 4. get the previus total
  * 5. calculate new deposit total and set the value to deposit total
+ * 6. Get current blance
+ * 7. claculate the new blance and set it to the blance total emement
  *
  */
 
@@ -18,7 +20,14 @@ document.getElementById("btn-deposit").addEventListener("click", function () {
   const depositTotalElement = document.getElementById("deposit-total");
   const prevDepositTotalString = depositTotalElement.innerText;
   const prevDepositTotal = parseFloat(prevDepositTotalString);
-  //   setp -5
+  //   setp -5blance-total
   const newDepositTotal = prevDepositTotal + newDepositAmount;
   depositTotalElement.innerText = newDepositTotal;
+  //   setp -6
+  const blanceTotalElement = document.getElementById("blance-total");
+  const prevBlanceTotalString = blanceTotalElement.innerText;
+  const prevBlanceTotalAmount = parseFloat(prevBlanceTotalString);
+  //   setp -7 
+  const newBlanceTotal = prevBlanceTotalAmount + newDepositAmount
+  blanceTotalElement.innerText = newBlanceTotal
 });
